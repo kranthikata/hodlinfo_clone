@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "buildCommand": "next build",
-  "build": [
-    {
-      "src": "./app.js",
-      "use": "@vercel/node"
-    }
-  ],
+
+  "build": {
+    "src": "./app.js",
+    "use": "@vercel/node"
+  },
   "routes": [
     {
       "src": "/(.*)",
