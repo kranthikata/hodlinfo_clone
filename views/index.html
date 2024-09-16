@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Hodlinfo Clone" />
+    <meta name="author" content="Kranthi Kumar Kata" />
+    <meta name="keywords" content="Hodlinfo hodlinfo clone" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/assets/icons/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-flex-container">
+        <div>
+          <a href="#"
+            ><img
+              src="/assets/images/appLogo.png"
+              alt="hodlinfo logo"
+              class="website-logo"
+          /></a>
+        </div>
+        <div class="dropdowns-container">
+          <select class="dropdown">
+            <option>INR</option>
+          </select>
+          <select class="dropdown">
+            <option>BTC</option>
+            <option>ETH</option>
+            <option>USDT</option>
+            <option>XRP</option>
+            <option>TRX</option>
+            <option>DASH</option>
+            <option>ZEC</option>
+            <option>XEM</option>
+            <option>IOST</option>
+            <option>WIN</option>
+            <option>BTT</option>
+            <option>WRX</option>
+          </select>
+          <button class="buy-btn dropdown">BUY BTC</button>
+        </div>
+        <div class="buttons-container">
+          <div class="timer-container">
+            <div class="circle" id="circle"></div>
+            <div class="circle-inner"></div>
+            <div class="time-text" id="time">60</div>
+          </div>
+
+          <div>
+            <button class="connect-btn">
+              <img
+                src="/assets/images/telegram.png"
+                alt="telegram logo"
+                class="telegram-logo"
+              />
+              <span>Connect Telegram</span>
+            </button>
+          </div>
+
+          <div class="toggle-button active" id="toggleButton"></div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="loader-container" id="loader">
+        <div class="loader"></div>
+      </div>
+      <div class="table-container">
+        <div class="best-section hide-loader" id="bestDetails">
+          <div>
+            <h1 class="percent">0.1 %</h1>
+            <p class="time">5 Mins</p>
+          </div>
+          <div>
+            <h1 class="percent">0.96 %</h1>
+            <p class="time">1 Hour</p>
+          </div>
+          <div>
+            <h1 class="best-price">Best Price to Trade</h1>
+            <h1 class="avg-price">₹ 26,56,110</h1>
+            <p class="time">Average BTC/INR net price including commission</p>
+          </div>
+          <div>
+            <h1 class="percent">2.73 %</h1>
+            <p class="time">1 Day</p>
+          </div>
+          <div>
+            <h1 class="percent">7.51 %</h1>
+            <p class="time">7 Days</p>
+          </div>
+        </div>
+        <div id="data-table"></div>
+      </div>
+    </section>
+    <hr class="separator" />
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">
+          Copyright &copy; 2024 &nbsp;&nbsp;Hodlinfo.com
+        </p>
+        <p class="footer-text">Support</p>
+      </div>
+      <button class="outline-btn">Add hodlinfo to home screen</button>
+    </footer>
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>

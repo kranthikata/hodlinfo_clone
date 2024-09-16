@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #191d28;
+  height: 100vh;
+}
+.nav-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 30px;
+}
+.website-logo {
+  height: 51px;
+}
+.dropdowns-container {
+  margin-top: 15px;
+}
+.dropdown {
+  height: 31px;
+  background-color: #2e3241;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 52px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 10px;
+  outline: none;
+}
+.buy-btn {
+  width: 60px !important;
+}
+
+/* Styles for count down timer start*/
+
+.timer-container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#17a2b8 0deg, #17a2b8 0deg, #17a2b8 0deg);
+}
+
+.circle-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #191d28;
+  z-index: 1;
+}
+
+.time-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: bold;
+  color: #17a2b8;
+  z-index: 2;
+}
+/* Styles for count down timer end*/
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.connect-btn {
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  height: 37px;
+  width: 160px;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.telegram-logo {
+  height: 13px;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+
+/* Styles for toggle button start */
+.toggle-button {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #17a2b8;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #2e3241;
+}
+
+.toggle-button.active::before {
+  transform: translateX(30px);
+}
+/* Styles for toggle button end */
+
+/* loader styling start*/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hide-loader {
+  display: none !important;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey background */
+  border-top: 8px solid #17a2b8; /* #17a2b8 colored segment */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* loader styling end */
+.separator {
+  width: 100%;
+  border: 1px solid gray;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #888686;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+.outline-btn {
+  background-color: #191d28;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px 5px;
+  cursor: pointer;
+  width: 237px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+.outline-btn:hover {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+
+.best-price {
+  color: #938d8d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.best-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.percent {
+  color: #17a2b8;
+  font-size: 27px;
+  font-weight: 400;
+}
+.time {
+  color: #938d8d;
+  font-size: 12px;
+}
+.avg-price {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.table-container {
+  padding: 10px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: transparent;
+}
+
+.crypto-table th {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  color: #938d8d;
+}
+
+.crypto-table td {
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #2e3241;
+}
+.crypto-table tr {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.crypto-table tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.crypto-table tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.platform-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.positive {
+  color: #4caf50 !important;
+}
+.negative {
+  color: #f44336 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-flex-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .website-logo {
+    height: 40px;
+    margin-left: 30px;
+  }
+  .dropdowns-container {
+    margin-top: 0;
+  }
+  .buttons-container {
+    margin-top: 0;
+    margin-right: 30px;
+  }
+  .dropdown {
+    width: 55px;
+  }
+  .buy-btn {
+    width: 64px;
+  }
+}
